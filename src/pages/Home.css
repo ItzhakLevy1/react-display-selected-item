@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+}
+
+.Home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 50%;
+  flex-direction: column;
+  gap: 1em;
+}

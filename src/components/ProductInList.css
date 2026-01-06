@@ -1,0 +1,12 @@
+.product-preview-card {
+  border: 1px solid cyan;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.product-preview-card:hover {
+  box-shadow: rgba(255, 254, 254, 0.35) 0px -50px 36px -28px inset;
+}

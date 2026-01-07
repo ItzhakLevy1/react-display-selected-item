@@ -13,7 +13,7 @@ function Home() {
         <h1>Select product</h1>
         {products.map((product) => (
           <ProductInList
-            key={product.id}
+            key={product.title}
             title={product.title}
             price={product.price}
             image={product.image}

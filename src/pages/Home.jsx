@@ -8,7 +8,7 @@ function Home() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   return (
-    <div className="Home-container">
+    <div className="home-container">
       <div className="products">
         <h1>Select product</h1>
         {products.map((product) => (

@@ -2,7 +2,11 @@ import "./ProductDetails.css";
 
 function ProductDetails({ product }) {
   if (!product) {
-    return <div>Please select a product</div>;
+    return (
+      <div className="productDetails">
+        <h1>Please select a product</h1>
+      </div>
+    );
   }
 
   return (

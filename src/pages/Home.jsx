@@ -1,7 +1,11 @@
+// Creates state for the selected product
+// Return a title and map through the products and create a product in list with a key, title, and an onSelect to update the selected product state
+// And return the product details component that accepts a product prop of the selected product
+
 import { useState } from "react";
-import products from "../data/products";
 import ProductInList from "../components/ProductInList";
 import ProductDetails from "../components/ProductDetails";
+import products from "../data/products";
 import "./Home.css";
 
 function Home() {
@@ -10,7 +14,7 @@ function Home() {
   return (
     <div className="home-container">
       <div className="products">
-        <h1>Select product</h1>
+        <h2>Products : </h2>
         {products.map((product) => (
           <ProductInList
             key={product.title}

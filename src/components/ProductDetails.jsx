@@ -1,18 +1,17 @@
+// The component accepts a product prop parameter
+// If no product has been selected - In a return display text to indicate that
+// If a product has been selected - In an additional return display its information (title, price and img)
+
 import "./ProductDetails.css";
 
 function ProductDetails({ product }) {
   if (!product) {
-    return (
-      <div className="product-details">
-        <h1>Please select a product</h1>
-      </div>
-    );
+    return <h2 className="product-details">Please select a product</h2>;
   }
-
   return (
-    <div className="product-details">
+    <div>
       <h2>{product.title}</h2>
-      <p>Price: {product.price}</p>
+      <p>{product.price}</p>
       <img src={product.image} alt={product.title} />
     </div>
   );

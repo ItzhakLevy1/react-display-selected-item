@@ -15,8 +15,6 @@ function Home() {
           <ProductInList
             key={product.title}
             title={product.title}
-            price={product.price}
-            image={product.image}
             onSelect={() => setSelectedProduct(product)}
           />
         ))}

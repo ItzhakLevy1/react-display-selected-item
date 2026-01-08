@@ -2,7 +2,8 @@ import "./ProductInList.css";
 
 function ProductInList({ title, onSelect }) {
   return (
-    <div className="product-preview-card" onClick={onSelect}>
+    //  onSelect: a callback function - invoked when the product is selected 
+    <div className="product-preview-card" onClick={onSelect}> 
       <p>Name: {title}</p>
     </div>
   );
